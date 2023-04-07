@@ -3,7 +3,7 @@ import meme from "./images/meme.jpg";
 import { base64Photo } from './Constant';
 import Delete from "./Deleteicon";
 import './styles.module.css'
-import styled from "styled-components";
+// import styled from "styled-components";
 import stylee from "./bai1.module.css";
 
 import styles from "./App.module.css";
