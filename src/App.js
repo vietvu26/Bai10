@@ -107,39 +107,39 @@ import styles from "./App.module.css";
 //   );
 // }
 
-function App() {
-  return (
-    <div className={stylee.container}>
-      <div className={stylee.sidebar}>Sidebar</div>
-      <div className={stylee.content}>Content</div>
-    </div>
-  );
-}
-
-export default App;
-
-
 // function App() {
-//   const [time, setTime] = useState('day');
-
-//   const handleNightClick = () => {
-//     setTime('night');
-//   }
-
-//   const handleDayClick = () => {
-//     setTime('day');
-//   }
-
 //   return (
-//     <div>
-//       <button className="button-group" onClick={handleNightClick}>Night</button>
-//       <button style={{marginRight:20}} onClick={handleDayClick}>Day</button>
-//       <div style={{ width: 200, height: 80, backgroundColor: time === 'day' ? 'blue' : 'black' }}></div>
+//     <div className={stylee.container}>
+//       <div className={stylee.sidebar}>Sidebar</div>
+//       <div className={stylee.content}>Content</div>
 //     </div>
 //   );
 // }
 
 // export default App;
+
+
+function App() {
+  const [time, setTime] = useState('day');
+
+  const handleNightClick = () => {
+    setTime('night');
+  }
+
+  const handleDayClick = () => {
+    setTime('day');
+  }
+
+  return (
+    <div>
+      <button className="button-group" onClick={handleNightClick}>Night</button>
+      <button style={{marginRight:20}} onClick={handleDayClick}>Day</button>
+      <div style={{ width: 200, height: 80, backgroundColor: time === 'day' ? 'blue' : 'black' }}></div>
+    </div>
+  );
+}
+
+export default App;
 
 
 
